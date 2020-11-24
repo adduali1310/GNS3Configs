@@ -1,0 +1,19 @@
+password encryption aes
+access-list 100 permit ip 192.168.1.0 0.0.0.255 192.168.2.0 0.0.0.255
+crypto map IPSEC-MAP 10 ipsec-isakmp 
+ set transform-set VPNTunnel 
+ match address 100
+ ip address 209.165.100.1 255.255.255.0
+crypto ipsec transform-set VPNTunnel esp-aes 256 esp-sha-hmac 
+ authentication pre-share
+ crypto map IPSEC-MAP
+ ip address 192.168.1.1 255.255.255.0
+ set pfs group5
+ set security-association lifetime seconds 86400
+crypto isakmp key 6 TCYcR^DJTBP`PZa]U[NABMCTRUgaQF_XPAAB address 209.165.200.1
+ group 5
+ip route 0.0.0.0 0.0.0.0 209.165.100.2
+ encr aes 256
+ set peer 209.165.200.1
+hostname R1
+crypto isakmp policy 10

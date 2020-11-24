@@ -1,0 +1,4 @@
+# Device names should be same as configuration file name
+# Interface Rules should be in second bracket. This gives fine grained access over the interfaces.
+R1 [ipsec:Not Allowed][interface Ethernet0/0:shutdown-Not Allowed]
+R2 [ipsec:Not Allowed]
