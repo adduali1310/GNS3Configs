@@ -1,0 +1,10 @@
+#All commands must be on a separate line
+#Shadow Files must be name <device_name>_shadow.cfg
+#Can deny all commands or sensitive commands
+
+
+R2->[interface GigabitEthernet1/0:All Commands Denied]
+R3->All Commands Denied
+
+
+#Description-Refer to IPSec Topology.All Commands to the right of R2 denied.Also,in R2 left link, all-commands denied.

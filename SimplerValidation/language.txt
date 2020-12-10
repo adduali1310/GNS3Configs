@@ -1,0 +1,4 @@
+R1-> All Commands Denied(Shadow is of the form R1_shadow.cfg)
+R2-> Interface 1-All Commands Denied
+R3-> Interface 2-Sensitive Commands Denied
+R4->All Sensitive Commands Denied
