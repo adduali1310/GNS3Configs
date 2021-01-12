@@ -1,0 +1,6 @@
+interface GigabitEthernet0/0
+no  ip address 10.131.61.246 255.255.255.252 # Not necessary
+ ip address 10.131.61.246 255.255.240.0
+
+no ip route 0.0.0.0 0.0.0.0 10.131.61.245
+ip route 0.0.0.0 0.0.0.0 10.131.48.1
