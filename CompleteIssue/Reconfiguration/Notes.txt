@@ -1,0 +1,17 @@
+This is a small ISP Reconfiguration issue wherein the ISP has changed their IP Address as shown:
+
+old ISP address -
+
+ip address: 10.131.61.246
+net mask: 255.255.255.252
+Default : 10.131.61.245
+
+new ISP address -
+
+ip address: 10.131.61.246
+net mask: 255.255.240.0
+Default : 10.131.48.1
+
+The Pre and Post Config demonstrate these changes and can be seen via the command:
+
+sh ip ro ---> On doing so you can see the change of default gateway in both the cases. You may also try pinging any IP to see it works.
