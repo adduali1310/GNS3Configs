@@ -1,1 +1,13 @@
-Pinging from any other Vlan to PC8 causes issues.
+Use configs in the Issue folder to recreate issue.Use configs in the Resolution folder to resolve the issue.
+Issue-Pinging from any other Vlan(PC2 for example) to PC8 causes issues.
+
+Debug:
+1.Open SW3 and run the following commands:
+ - do sh ip int br ---> Check if Vlan 10 is present
+2. Do the same for ESW1. If Vlan 10 is present on both SW3 and ESW1, that is the issue.
+3.We can resolve this by removing the inteface vlan 10 from SW3.To do this use the resolved issue folder config or enter the following command:
+no int vlan10
+
+Side Note:
+1.Run this command on both switches:
+- do sh int trunk ---> Vlan 10 should be in allowed list.
