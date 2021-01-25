@@ -49,8 +49,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"50\" width=\"161\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">192.168.30.0/24\nVlan30-marketing</text></svg>",
-                "x": 280,
-                "y": 141,
+                "x": 142,
+                "y": 134,
                 "z": 2
             },
             {
@@ -132,6 +132,15 @@
                 "svg": "<svg height=\"29\" width=\"132\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">172.16.2.0/24</text></svg>",
                 "x": 778,
                 "y": -286,
+                "z": 2
+            },
+            {
+                "drawing_id": "5b9ac141-1306-435f-a916-895b2ba127bd",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"29\" width=\"67\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">Vlan10</text></svg>",
+                "x": 359,
+                "y": 148,
                 "z": 2
             }
         ],
@@ -332,8 +341,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "f1/1",
-                            "x": 35,
-                            "y": 55
+                            "x": -30,
+                            "y": 69
                         },
                         "node_id": "ea11f966-2106-4383-92d9-2df1a1183f63",
                         "port_number": 1
@@ -631,6 +640,37 @@
                     }
                 ],
                 "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "0ac05009-ae02-4540-98eb-eca298ebda6b",
+                "nodes": [
+                    {
+                        "adapter_number": 1,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f1/2",
+                            "x": 58,
+                            "y": 48
+                        },
+                        "node_id": "ea11f966-2106-4383-92d9-2df1a1183f63",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": 9,
+                            "y": -3
+                        },
+                        "node_id": "9c725b5b-a14d-4669-8529-07814a1f6d86",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
             }
         ],
         "nodes": [
@@ -773,8 +813,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": 234,
-                "y": 218,
+                "x": 187,
+                "y": 226,
                 "z": 1
             },
             {
@@ -965,7 +1005,7 @@
                 "console_type": "telnet",
                 "custom_adapters": [],
                 "first_port_name": null,
-                "height": 32,
+                "height": 48,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
@@ -1007,9 +1047,9 @@
                     "system_id": "FTX0945W0MY",
                     "usage": ""
                 },
-                "symbol": ":/symbols/classic/ethernet_switch.svg",
+                "symbol": ":/symbols/classic/multilayer_switch.svg",
                 "template_id": "852721e0-4cab-41b7-b3d7-5cd88ba4a2b6",
-                "width": 72,
+                "width": 51,
                 "x": 217,
                 "y": 16,
                 "z": 1
@@ -1447,6 +1487,35 @@
                 "width": 65,
                 "x": 936,
                 "y": 31,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5024,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC8",
+                    "x": 12,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC8",
+                "node_id": "9c725b5b-a14d-4669-8529-07814a1f6d86",
+                "node_type": "vpcs",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {},
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
+                "width": 65,
+                "x": 372,
+                "y": 217,
                 "z": 1
             }
         ]
