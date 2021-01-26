@@ -1,0 +1,20 @@
+! COMMAND [ARG ...]      Invoke an OS COMMAND with optional ARG(s)
+arp                        Shortcut for: show arp. Show arp table
+clear ARG                Clear IPv4/IPv6, arp/neighbor cache, command history
+dhcp [OPTION]            Shortcut for: ip dhcp. Get IPv4 address via DHCP
+disconnect               Exit the telnet session (daemon mode)
+echo TEXT                Display TEXT in output. See also  set echo ?
+help                     Print help
+history                  Shortcut for: show history. List the command history
+ip ARG ... [OPTION]      Configure the current VPC's IP settings. See ip ?
+load [FILENAME]          Load the configuration/script from the file FILENAME
+ping HOST [OPTION ...]   Ping HOST with ICMP (default) or TCP/UDP. See ping ?
+quit                     Quit program
+relay ARG ...            Configure packet relay between UDP ports. See relay ?
+rlogin [ip] port         Telnet to port on host at ip (relative to host PC)
+save [FILENAME]          Save the configuration to the file FILENAME
+set ARG ...              Set VPC name and other options. Try set ?
+show [ARG ...]           Print the information of VPCs (default). See show ?
+sleep [seconds] [TEXT]   Print TEXT and pause running script for seconds
+trace HOST [OPTION ...]  Print the path packets take to network HOST
+version                  Shortcut for: show version
