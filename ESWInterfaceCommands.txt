@@ -1,0 +1,78 @@
+
+Interface configuration commands:
+  arp                     Set arp type (arpa, probe, snap) or timeout
+  auto                    Configure Automation
+  backup                  Modify backup parameters
+  bandwidth               Set bandwidth informational parameter
+  bgp-policy              Apply policy propagated by bgp community string
+  bridge-group            Transparent bridging interface parameters
+  carrier-delay           Specify delay for interface transitions
+  cdp                     CDP interface subcommands
+  channel-group           Etherchannel/port bundling configuration
+  clns                    CLNS interface subcommands
+  cmns                    OSI CMNS
+  crypto                  Encryption/Decryption commands
+  dampening               Enable event dampening
+  default                 Set a command to its defaults
+  delay                   Specify interface throughput delay
+  description             Interface specific description
+  diffserv                diffserv (Provisioning)
+  dlsw                    DLSw interface subcommands
+  dot1q                   dot1q interface configuration commands
+  dot1x                   Interface Config Commands for 802.1x
+  dspu                    Down Stream PU
+  duplex                  Configure duplex operation.
+  eou                     EAPoUDP Interface Configuration Commands
+  exit                    Exit from interface configuration mode
+  flow-sampler            Attach flow sampler to the interface
+  fras                    DLC Switch Interface Command
+  h323-gateway            Configure H323 Gateway
+  help                    Description of the interactive help system
+  hold-queue              Set hold queue depth
+  ip                      Interface Internet Protocol config commands
+  isis                    IS-IS commands
+  iso-igrp                ISO-IGRP interface subcommands
+  keepalive               Enable keepalive
+  lan-name                LAN Name command
+  lat                     LAT commands
+  llc2                    LLC2 Interface Subcommands
+  load-interval           Specify interval for load calculation for an
+                          interface
+  locaddr-priority        Assign a priority group
+  logging                 Configure logging for interface
+  mac-address             Manually set interface MAC address
+  max-reserved-bandwidth  Maximum Reservable Bandwidth on an Interface
+  mls                     mls sub/interface commands
+  mpoa                    MPOA interface configuration commands
+  mtu                     Set the interface Maximum Transmission Unit (MTU)
+  netbios                 Use a defined NETBIOS access list or enable
+                          name-caching
+  no                      Negate a command or set its defaults
+  ntp                     Configure NTP
+  pagp                    PAgP interface subcommands
+  pppoe                   pppoe interface subcommands
+  pppoe-client            pppoe client
+  random-detect           Enable Weighted Random Early Detection (WRED) on an
+                          Interface
+  rmon                    Configure Remote Monitoring on an interface
+  roles                   Specify roles (by entering roles mode)
+  routing                 Per-interface routing configuration
+  sap-priority            Assign a priority group
+  service-policy          Configure QoS Service Policy
+  shutdown                Shutdown the selected interface
+  sna                     SNA pu configuration
+  snapshot                Configure snapshot support on the interface
+  snmp                    Modify SNMP interface parameters
+  spanning-tree           Spanning Tree Subsystem
+  speed                   Configure speed operation.
+  storm-control           storm configuration
+  switchport              Set switching mode characteristics
+  timeout                 Define timeout values for this interface
+  transmit-interface      Assign a transmit interface to a receive-only
+                          interface
+  tx-ring-limit           Configure PA level transmit ring limit
+  vlan-id                 Process VLAN-encapsulated packets with a specific
+                          VLAN ID
+  vlan-range              Process VLAN-encapsulated packets with a range of
+                          VLAN IDs
+  xconnect                Xconnect commands

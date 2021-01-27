@@ -15,3 +15,34 @@ Default : 10.131.48.1
 The Pre and Post Config demonstrate these changes and can be seen via the command:
 
 sh ip ro ---> On doing so you can see the change of default gateway in both the cases. You may also try pinging any IP to see it works.
+
+
+If you want to recreate config:
+
+Step1:
+On ISP Router:
+conf t
+int g2/0
+ip add 10.131.48.1 255.255.240.0
+no sh
+
+Step2:
+On ESW2 Router:
+conf t
+int f1/0
+ip add 10.131.61.246 255.255.240.0
+no sh
+
+Step3:
+
+ip route 0.0.0.0 0.0.0.0 10.131.48.1
+
+Step4:
+
+Check the changes by doing:
+
+do sh ip ro
+
+Step5:
+
+Try pinging from PC9(13.1.1.2) to PC4 to test working changes.
